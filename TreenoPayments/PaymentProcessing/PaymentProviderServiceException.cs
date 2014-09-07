@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace TreenoPayments.PaymentProcessing
 {
+    [Serializable] 
     class PaymentProviderServiceException : Exception
     {
         public Object PaymentProviderExceptionObject;

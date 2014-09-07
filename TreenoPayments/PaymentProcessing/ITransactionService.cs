@@ -6,6 +6,14 @@ using System.Threading.Tasks;
 
 namespace TreenoPayments.PaymentProcessing
 {
+    /// <summary>
+    /// This defines the contract for handling payment related transactions at a payment provider
+    /// </summary>
+    /// <typeparam name="PaymentMethod">The type of the payment method required by a payment provider. 
+    /// For example, ror sale transactions, Braintree requires a single string of the Nonce created on 
+    /// the client. However, some payment providers may require the full credit card details for processing 
+    /// payment transactions.</typeparam>
+    /// <typeparam name="Response">The type that would be returned from a payment provider</typeparam>
     public interface ITransactionService<PaymentMethod, Response>
     {
         /// <summary>

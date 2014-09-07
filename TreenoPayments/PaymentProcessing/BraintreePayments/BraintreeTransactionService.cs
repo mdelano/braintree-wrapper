@@ -7,14 +7,6 @@ using System.Text;
 using System.Threading.Tasks;
 using TreenoPayments.PaymentProcessing;
 
-/**
- * BraintreeCustomerService
- * 
- * Company: Treeno Software
- * Author: Mike Delano
- * 
- **/
-
 namespace TreenoPayments.PaymentProcessing.BraintreePayments
 {
     

@@ -8,7 +8,12 @@ using TreenoPayments.PaymentProcessing;
 
 namespace TreenoPayments.PaymentProcessing
 {
-    public abstract class PaymentProviderResponse<ProviderResponseType> : ITransactionResponse<ProviderResponseType>
+    /// <summary>
+    /// A generic response that will wrap the response from a payment provider 
+    /// so that we can deal will something consistent in our payment code
+    /// </summary>
+    /// <typeparam name="PaymentProviderResponseType">The type that will be returned from the payment provider</typeparam>
+    public abstract class PaymentProviderResponse<ProviderResponseType> : IPaymentProviderResponse<ProviderResponseType>
     {
         ProviderResponseType Response;
 

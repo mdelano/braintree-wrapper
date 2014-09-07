@@ -7,6 +7,10 @@ using TreenoPayments.PaymentProcessing;
 
 namespace TreenoPayments.PaymentProcessing
 {
+    /// <summary>
+    /// This class handles any customer management at the payment provider
+    /// </summary>
+    /// <typeparam name="CustomerType"></typeparam>
     public interface ICustomerService<CustomerType>
         where CustomerType : Customer
     {

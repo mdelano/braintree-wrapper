@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace TreenoPayments.PaymentProcessing.BraintreePayments
 {
+    /// <summary>
+    /// Wrapper for the Braintree Payment Clients
+    /// </summary>
     public class BraintreeClient
     {
         public static BraintreeGateway SANDBOX_GATEWAY = new BraintreeGateway
